@@ -61,7 +61,7 @@ function App() {
         height: 297}}>
     {avatar.map((id, index) => {
       return <div key={index} style={{
-        backgroundImage: `url(http://localhost:4000/img/${id})`,
+        backgroundImage: `url(${process.env.REACT_APP_IMG || 'http://localhost:4000/img'}/${id})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'contain',
         width: 207  ,

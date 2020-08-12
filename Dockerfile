@@ -17,6 +17,6 @@ COPY ./web/public /app/web/public
 COPY ./api/src /app/api/src
 COPY ./web/src /app/web/src
 
-RUN REACT_APP_GRAPHQL=/graphql yarn --cwd=/app/web build
+RUN REACT_APP_GRAPHQL=/graphql REACT_APP_IMG=/img yarn --cwd=/app/web build
 CMD yarn --cwd=/app/api start
 
