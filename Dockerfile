@@ -1,4 +1,4 @@
-FROM node:12.16
+FROM node:12.16-alpine
 
 RUN mkdir -p /app/api && mkdir -p /app/web
 
